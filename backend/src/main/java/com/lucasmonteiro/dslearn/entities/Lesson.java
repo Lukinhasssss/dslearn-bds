@@ -41,7 +41,7 @@ public abstract class Lesson implements Serializable {
 			@JoinColumn(name = "offer_id")
 		}
 	)
-	private Set<Enrollment> enrollmentDone = new HashSet<>();
+	private Set<Enrollment> enrollmentsDone = new HashSet<>();
 	
 	public Lesson() {}
 
@@ -85,7 +85,7 @@ public abstract class Lesson implements Serializable {
 	}
 
 	public Set<Enrollment> getEnrollmentDone() {
-		return enrollmentDone;
+		return enrollmentsDone;
 	}
 
 	@Override
