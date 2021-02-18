@@ -18,6 +18,7 @@ import com.lucasmonteiro.dslearn.entities.enums.DeliverStatus;
 @Entity
 @Table(name = "tb_deliver")
 public class Deliver implements Serializable {
+	
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -145,4 +146,5 @@ public class Deliver implements Serializable {
 			return false;
 		return true;
 	}
+	
 }
